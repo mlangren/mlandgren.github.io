@@ -1,0 +1,69 @@
+#wrapper{
+  height: 800px;
+  width:1000px;
+  background-color: pink;
+  margin-left: auto;
+  margin-right: auto;
+}
+header{
+  width: 1000px;
+  height: 200px;
+  background-image: url('../img/logga.png');
+  
+}
+nav{
+  width: 1000px;
+  height: 60px;
+  background-color: #4692c6;
+  
+}
+#center{
+  display:flex;
+}
+main{
+  height:600px;
+  width:700px;
+  background-color: white;
+}
+aside{
+  height:600px;
+  width:200px;
+  background-color: #e4f1f9;
+}
+footer{
+  height: 20px;
+  width: 1000px;
+  background-color: #0d0e0d;
+  color:#FFFFFF;
+  
+}
+
+/*________  formatering av länkar ______________________*/
+
+a{
+  
+  color: black;
+  font-family: monospace;
+  font-size: 40px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+
