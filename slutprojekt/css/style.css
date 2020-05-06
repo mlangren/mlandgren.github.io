@@ -1,0 +1,33 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#wrapper{
+  height: 5000px;
+  width: 100vw;
+  background-color: black;
+}
+header{
+  width: 100%;
+  height: 70px;
+  font-size: 3vw;
+}
+main{
+  width: 100%;
+  height: 1920px;
+  background-color: orange;
+  display: grid;
+}
+.shortcut{
+  width: 200px;
+  height: 200px;
+}
+#title{
+  width: 100%;
+  height: 70px;
+  font-size: 3vw;
+  color: black;
+}
+h1{
+  font-size: 100px;
+}
