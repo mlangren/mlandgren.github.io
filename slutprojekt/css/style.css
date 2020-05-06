@@ -1,32 +1,56 @@
-body {
+body, html {
   margin: 0px;
   padding: 0px;
+  height: 100%;
 }
 #wrapper{
-  height: 5000px;
-  width: 100vw;
+  height: 2000px;
+  width: 100%;
   background-color: black;
 }
-header{
-  width: 100%;
-  height: 70px;
-  font-size: 3vw;
+#mainborder{
+ background-color: #FF6347;
+ width: 100%;
+ height: 100vh;
 }
 main{
-  width: 100%;
-  height: 1920px;
-  background-color: orange;
+  height: 90%;
+  width: 90%;
+  margin: auto;
   display: grid;
+  grid-template-areas:
+  "upleft empty1 upright"
+  "empty2 title empty3"
+  "downleft empty4 downright";
+
+  /*background-image: url('../imgs/');*/
+  /*background: rgba(245, 242, 208, 1);*/
+  background-color: white;
 }
-.shortcut{
-  width: 200px;
-  height: 200px;
+main > div{
+  font-size: 100px;
+  font size: bold;
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+  position: center;
+  margin: auto;
+}
+
+#career{
+  grid-area: upleft;
+}
+#history{
+  grid-area: upright;
 }
 #title{
-  width: 100%;
-  height: 70px;
-  font-size: 3vw;
-  color: black;
+  grid-area: title;
+
+}
+#album{
+  grid-area: downleft;
+}
+#gallery{
+  grid-area: downright;
 }
 h1{
   font-size: 100px;
