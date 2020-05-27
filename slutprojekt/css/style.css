@@ -2,19 +2,17 @@ body, html {
   margin: 0px;
   padding: 0px;
   height: 100%;
+  background-color: black;
 }
-#wrapper{
-  height: 2000px;
+#wrapper1{
+  height: 100vh;
   width: 100%;
   /*background: rgba(245, 242, 208, 1);*/
-   background-color: black;
 }
 #mainborder{
-    display: none;
- background-color: black;
- width: 96%;
- height: 92vh;
- padding: 2%;
+  width: 96%;
+  height: 92vh;
+  padding: 2%;
 }
 main{
   height: 100%;
@@ -25,14 +23,14 @@ main{
   "upleft empty1 upright"
   "empty2 title empty3"
   "downleft empty4 downright";
-  background-image: url('../imgs/postbackground.JPG');
-  background-size: cover;
-
+  /*background-image: url('../imgs/postbackground.JPG');*/
   /*background: rgba(245, 242, 208, 1);*/
-  /*background-color: white;*/
+  background-color: #F9CC3B;
+
 }
 main > div{
-  font-size: 100px;
+  cursor: pointer;
+  font-size: 3vw;
   font size: bold;
   font-family: 'Arimo', sans-serif;
   text-align: center;
@@ -43,19 +41,66 @@ main > div{
 #career{
   grid-area: upleft;
 }
+
 #history{
   grid-area: upright;
 }
 #title{
+  cursor: default;
   grid-area: title;
+  font-size: 100px;
   text-decoration: underline;
 }
 #album{
   grid-area: downleft;
 }
-#gallery{
+#media{
   grid-area: downright;
 }
+#wrapper2{
+  height: 200vh;
+  width: 100%;
+}
+#historypage, #albumpage, #mediapage{
+  background-color: green;
+  width: 96%;
+  height: 92vh;
+  padding: 2%;
+  font-family: 'Arimo', sans-serif;
+}
+
+#historypage{
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 70%;
+  grid-template-rows: 16vw 16vw 16vw;
+  font-size: 200%;
+  margin: auto;
+}
+.historycells{
+  border-color: black;
+  border-style: solid;
+  background-color: #F9CC3B;
+  font-size: 2vw;
+  text-align: center;
+}
+#albumpage{
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70%;
+}
+.albumcells{
+  border-color: black;
+  border-style: solid;
+  background-color: #F9CC3B;
+  font-size: 23px;
+  text-align: center;
+}
 h1{
-  font-size: 100px;
+  font-size: 2vw;
 }
