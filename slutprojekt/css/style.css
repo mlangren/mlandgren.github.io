@@ -77,6 +77,7 @@ main > div{
   grid-template-rows: 16vw 16vw 16vw;
   font-size: 200%;
   margin: auto;
+  min-height: 800px;
 }
 .historycells{
   border-color: black;
@@ -91,7 +92,10 @@ main > div{
   justify-content: center;
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 70%;
+  grid-template-rows: 80%;
+  min-height: 800px;
+  min-width: 900px;
+
 }
 .albumcells{
   border-color: black;
@@ -99,6 +103,16 @@ main > div{
   background-color: #F9CC3B;
   font-size: 23px;
   text-align: center;
+  height: 600px;
+  min-width: 300px;
+}
+.mediapage{
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 70%;
+  grid-template-rows: 16vw 16vw 16vw;
 }
 h1{
   font-size: 2vw;
