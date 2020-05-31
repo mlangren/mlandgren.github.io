@@ -184,12 +184,12 @@ h1{
   }
 
   @media screen and (max-width: 600px) {
-  /*  main{
+    /*  main{
 
-      grid-template-areas:
-      "upleft empty1 upright"
-      "title title title"
-      "downleft empty4 downright";
+    grid-template-areas:
+    "upleft empty1 upright"
+    "title title title"
+    "downleft empty4 downright";
 
     }*/
     #albumpage{
