@@ -1,20 +1,21 @@
-body, html {
+body, html { /* För att sidan ska lägga sif rätt */
   margin: 0px;
   padding: 0px;
   height: 100%;
   width: 100%;
   background-color: black;
+  scroll-behavior: smooth;
 }
 #wrapper1{
   height: 100vh;
   width: 100%;
 }
-#mainborder{
+#mainborder{ /* Ramen som main ligger i */
   width: 96%;
   height: 92vh;
   padding: 2%;
 }
-main{
+main{ /* Main med gridupplägg */
   height: 100%;
   width: 100%;
   margin: auto;
@@ -28,7 +29,7 @@ main{
   background-color: #F9CC3B;
 
 }
-main > div{
+main > div{ /* Alla div-element inom main */
   cursor: pointer;
   font-size: 4vw;
   font size: bold;
@@ -57,20 +58,22 @@ main > div{
 #media{
   grid-area: downright;
 }
-#wrapper2{
+
+#wrapper2{ /* Wrapper för artiklarna*/
   height: 200vh;
   width: 100%;
 }
-#historypage, #albumpage, #mediapage{
+
+#historypage, #albumpage, #mediapage{ /* Atiklarnas utseende */
   width: 96%;
   height: 92vh;
   padding: 2%;
   font-family: 'Arimo', sans-serif;
-}
-
-#historypage{
   background-color: black;
   display: grid;
+}
+
+#historypage{ /* unika utseendet på historia och karriär */
   justify-content: center;
   align-content: center;
   grid-template-columns: 70%;
@@ -86,9 +89,8 @@ main > div{
   font-size: 2vw;
   text-align: center;
 }
-#albumpage{
-  background-color: black;
-  display: grid;
+
+#albumpage{ /* Unika utseende för album */
   justify-content: center;
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -102,9 +104,7 @@ main > div{
   text-align: center;
 }
 
-#mediapage{
-  background-color: black;
-  display: grid;
+#mediapage{ /* Unika utseende för media */
   justify-content: center;
   align-content: center;
   grid-template-columns: 80%;
@@ -128,7 +128,7 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
-#spotify{
+#spotify{ /* Nedan är positioneringen av ikonerna */
   object-fit:none;
   width: 150px;
   height: 150px;
@@ -146,7 +146,6 @@ a {
   height: 150px;
   object-position: 10% 100% ;
 }
-
 #twitter{
   object-fit:none ;
   width: 150px;
@@ -158,16 +157,11 @@ h1{
   font-size: 2vw;
 }
 
-
-@media screen and (max-width: 880px) {
-  #title{
-  }
-
+@media screen and (max-width: 600px) { /* Responsive för mindre skärmar*/
   #historypage{
     grid-template-columns: 90%;
     grid-template-rows: 16vw 16vw 16vw;1
     font-size: 200%;
-
     min-height: 800px;
   }
   .historycells{
@@ -177,37 +171,14 @@ h1{
     font-size: 2vw;
     text-align: center;
   }
-
   .albumcells{
     font-size: 115%;
   }
 
-  @media screen and (max-width: 600px) {
-    /*  main{
-
-    grid-template-areas:
-    "upleft empty1 upright"
-    "title title title"
-    "downleft empty4 downright";
-
-    }*/
-    #albumpage{
+@media screen and (max-width: 600px) { /* Responsive för vissa telefoner*/
+  #albumpage{
       grid-template-rows: 98%;
     }
-
-    #mediapage{
+  #mediapage{
       grid-template-columns: 100%;
-
-    }
-    #spotify{
-      object-position: ;
-    }
-
-
-    @media screen and (max-width: 400px) {
-      main > div{
-
-      }
-
-
     }

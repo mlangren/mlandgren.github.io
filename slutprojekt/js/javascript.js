@@ -1,4 +1,4 @@
-$("#wrapper1").css("display", "none");
+$("#wrapper1").css("display", "none"); //för att långsamt visa sidan måste den först vara osynlig
 $("#wrapper2").css("height", "90vh");
 $("body").css("overflow", "hidden");
 $("#wrapper2, #historypage, #albumpage, #mediapage").css("display", "none");
@@ -8,7 +8,7 @@ $("#wrapper2, #historypage, #albumpage, #mediapage").css("display", "none");
 
 $(document).ready(function() { // fade in till sidan när den är redo.
 
-  $("#wrapper1").fadeIn(1000);
+  $("#wrapper1").delay(100).fadeIn(1000);
 });
 
 
