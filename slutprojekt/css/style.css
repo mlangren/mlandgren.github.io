@@ -32,10 +32,8 @@ main{ /* Main med gridupplägg */
 main > div{ /* Alla div-element inom main */
   cursor: pointer;
   font-size: 4vw;
-  font size: bold;
   font-family: 'Arimo', sans-serif;
   text-align: center;
-  position: center;
   margin: auto;
 }
 
@@ -160,7 +158,7 @@ h1{
 @media screen and (max-width: 600px) { /* Responsive för mindre skärmar*/
   #historypage{
     grid-template-columns: 90%;
-    grid-template-rows: 16vw 16vw 16vw;1
+    grid-template-rows: 16vw 16vw 16vw;
     font-size: 200%;
     min-height: 800px;
   }
@@ -182,3 +180,5 @@ h1{
   #mediapage{
       grid-template-columns: 100%;
     }
+}
+}
