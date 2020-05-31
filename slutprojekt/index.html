@@ -6,29 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-- Länk till JQuery -->
   <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
-  <title>Slutprojekt - under byggnad</title>
+  <title>Post Malone Tribute</title>
   <meta name="description" content="Tribute website about post malone with various information">
-
+  <script>$("#wrapper1,#wrapper2").css("display", "none");</script>
 </head>
 <body>
-  <div id="wrapper1"> <!-- Wrapper för  -->
-    <div id="mainborder">
+  <div id="wrapper1"> <!-- Wrapper för menyn -->
+    <div id="mainborder"> <!-- Menyn och innehåll -->
       <main>
-        <div id="career"> CAREER</div>
-        <div id="tom1"></div>
-        <div id="history"> HISTORY </div>
+        <div id="career"> <a href="#historypage">CAREER</a></div>
+        <div id="tom1"> </div>
+        <div id="history"> <a href="#historypage">HISTORY</a></div>
         <div id="tom2"> </div>
         <div id="title"> POST MALONE </div>
         <div id="tom3"> </div>
-        <div id="album"> ALBUM</div>
+        <div id="album"> <a href="#albumpage">ALBUM</a></div>
         <div id="tom4"> </div>
-        <div id="media"> MEDIA</div>
+        <div id="media"> <a href="#mediapage">MEDIA</a></div>
       </main>
 
     </div>
   </div>
-  <div id="wrapper2">
-    <div id="historypage">
+  <div id="wrapper2"> <!-- Wrapper för alla artiklar -->
+    <div id="historypage"> <!-- Karriär och historia sidan -->
       <div class="historycells">
         Austin Richard Post was born on july 4th 1995 in Syracuse, New york, America, where he lived for 9 years until he moved to Texas.<br>
         He grew up with his mother Nicole Frazier Lake and his father Rich Post.<br>
@@ -48,7 +48,7 @@
 
 
     </div>
-    <div id="albumpage">
+    <div id="albumpage"> <!-- Album  -->
       <div class="albumcells">
         <h1>3. Hollywood's Bleeding</h1>
         Hollywood's Bleeding<br>
@@ -113,7 +113,7 @@
       </div>
 
     </div>
-    <div id="mediapage">
+    <div id="mediapage"> <!-- Sociala medier -->
       <div class="mediacells">
         <img id="spotify" src="imgs/sprite.png" alt="ikoner på medier">
         <a href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60?si=JWVy5V-_TAmJFFIU-Gna6A">Spotify - Post Malone</a>
@@ -137,7 +137,6 @@
     </div>
 
   </div>
-  <script src="js/javascript.js" charset="utf-8">
-  </script> <!-- hämtar Javascript -->
+  <script src="js/javascript.js"></script> <!-- hämtar Javascript -->
 </body>
 </html>
