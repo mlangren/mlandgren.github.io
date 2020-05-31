@@ -2,6 +2,7 @@ body, html {
   margin: 0px;
   padding: 0px;
   height: 100%;
+  width: 100%;
   background-color: black;
 }
 #wrapper1{
@@ -29,7 +30,7 @@ main{
 }
 main > div{
   cursor: pointer;
-  font-size: 3vw;
+  font-size: 4vw;
   font size: bold;
   font-family: 'Arimo', sans-serif;
   text-align: center;
@@ -47,7 +48,7 @@ main > div{
 #title{
   cursor: default;
   grid-area: title;
-  font-size: 100px;
+  font-size: 6vw;
   text-decoration: underline;
 }
 #album{
@@ -61,7 +62,6 @@ main > div{
   width: 100%;
 }
 #historypage, #albumpage, #mediapage{
-  background-color: green;
   width: 96%;
   height: 92vh;
   padding: 2%;
@@ -93,27 +93,122 @@ main > div{
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80%;
-  min-height: 800px;
-  min-width: 900px;
-
 }
 .albumcells{
   border-color: black;
   border-style: solid;
   background-color: #F9CC3B;
-  font-size: 23px;
+  font-size: 135%;
   text-align: center;
-  height: 600px;
-  min-width: 300px;
 }
-.mediapage{
+
+#mediapage{
   background-color: black;
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 70%;
-  grid-template-rows: 16vw 16vw 16vw;
+  grid-template-columns: 80%;
+  grid-template-rows: 20% 20% 20% 20%;
 }
+.mediacells{
+  display: flex;
+  border-color: black;
+  border-style: solid;
+  background-color: #F9CC3B;
+  font-size: 4vw;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 167px;
+  min-width: 500px;
+  min-height: 150px;
+  justify-content: center;
+  align-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#spotify{
+  object-fit:none;
+  width: 150px;
+  height: 150px;
+  object-position: 3% 0
+}
+#youtube{
+  object-fit:none ;
+  width: 150px;
+  height: 150px;
+  object-position: 98% 0%;
+}
+#instagram{
+  object-fit:none ;
+  width: 150px;
+  height: 150px;
+  object-position: 10% 100% ;
+}
+
+#twitter{
+  object-fit:none ;
+  width: 150px;
+  height: 150px;
+  object-position: 110% 100%;
+}
+
 h1{
   font-size: 2vw;
 }
+
+
+@media screen and (max-width: 880px) {
+  #title{
+  }
+
+  #historypage{
+    grid-template-columns: 90%;
+    grid-template-rows: 16vw 16vw 16vw;1
+    font-size: 200%;
+
+    min-height: 800px;
+  }
+  .historycells{
+    border-color: black;
+    border-style: solid;
+    background-color: #F9CC3B;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .albumcells{
+    font-size: 115%;
+  }
+
+  @media screen and (max-width: 600px) {
+  /*  main{
+
+      grid-template-areas:
+      "upleft empty1 upright"
+      "title title title"
+      "downleft empty4 downright";
+
+    }*/
+    #albumpage{
+      grid-template-rows: 98%;
+    }
+
+    #mediapage{
+      grid-template-columns: 100%;
+
+    }
+    #spotify{
+      object-position: ;
+    }
+
+
+    @media screen and (max-width: 400px) {
+      main > div{
+
+      }
+
+
+    }
